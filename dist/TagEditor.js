@@ -71,6 +71,8 @@
 
 	var _react = __webpack_require__(4);
 
+	var _react2 = _interopRequireDefault(_react);
+
 	var _connectToStore = __webpack_require__(5);
 
 	var _Tag = __webpack_require__(11);
@@ -238,12 +240,12 @@
 
 	            var store = this.props.store;
 	            if (!store) {
-	                return React.createElement("div", null);
+	                return _react2["default"].createElement("div", null);
 	            }
 
 	            var tags = this.props.store.tags;
 	            var tagNodes = tags.map(function (tag, i) {
-	                return React.createElement(
+	                return _react2["default"].createElement(
 	                    _Tag2["default"],
 	                    {
 	                        active: _this2.state.editing === i ? true : false,
@@ -265,13 +267,13 @@
 	                );
 	            });
 	            if (!tags.length) {
-	                tagNodes = React.createElement(
+	                tagNodes = _react2["default"].createElement(
 	                    "div",
 	                    { className: "tag-editor-placeholder" },
 	                    this.props.placeholder
 	                );
 	            }
-	            return React.createElement(
+	            return _react2["default"].createElement(
 	                "div",
 	                { className: "tag-editor" + (typeof this.state.editing === 'number' ? " is-active" : ""), onClick: this.handleClick.bind(this), ref: "editor" },
 	                tagNodes
