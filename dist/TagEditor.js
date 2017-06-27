@@ -361,7 +361,7 @@
 
 	var _TagStore2 = _interopRequireDefault(_TagStore);
 
-	var connectToStore = function connectToStore(TagEditor) {
+	var connectToStore = function connectToStore(TagEditorView) {
 	    return (function (_Component) {
 	        _inherits(_class, _Component);
 
@@ -416,7 +416,7 @@
 	        }, {
 	            key: "render",
 	            value: function render() {
-	                return React.createElement(TagEditor, _extends({}, this.props, { store: this.state.store }));
+	                return React.createElement(TagEditorView, _extends({}, this.props, { store: this.state.store }));
 	            }
 	        }]);
 

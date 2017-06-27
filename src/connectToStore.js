@@ -1,7 +1,7 @@
 import { Component } from "react"
 import TagStore from "./TagStore"
 
-export var connectToStore = TagEditor => class extends Component {
+export const connectToStore = TagEditorView => class extends Component {
     constructor() {
         super()
         this.state = { store: null }
@@ -38,6 +38,6 @@ export var connectToStore = TagEditor => class extends Component {
         return this.state.store.output()
     }
     render() {
-        return <TagEditor {...this.props} store={this.state.store} />
+        return <TagEditorView {...this.props} store={this.state.store} />
     }
 }

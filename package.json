@@ -1,6 +1,6 @@
 {
   "name": "react-email-tageditor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tag editor built with react.js",
   "main": "dist/TagEditor.js",
   "scripts": {
